@@ -1,0 +1,19 @@
+<h3>Login</h3>
+
+<div class="containRow">
+    <div class="input-field">
+        <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate">
+        <label for="usuario" class="active">Usuário</label>
+    </div>
+</div>
+
+<div class="containRow">
+    <div class="input-field">
+        <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate">
+        <label for="senha" class="active">Senha</label>
+    </div>
+</div>
+
+<button type="submit" name="action" class="buttonClass" (click)="fazerLogin()">
+    LOGIN
+</button>
